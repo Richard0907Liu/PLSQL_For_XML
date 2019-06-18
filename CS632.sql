@@ -180,7 +180,7 @@ create table BNDATA(
 insert into BNDATA values(
     sys.XMLType.createXML( 
         '<BN>
-            <BORO> Staten Island CB 3</BORO>
+            <BORO> StatenÂ IslandÂ CBÂ 3</BORO>
             <NEIGH>Annadale</NEIGH>
             <NEIGH>Arden Heights</NEIGH>
             <NEIGH>Bay Terrace</NEIGH>
@@ -190,7 +190,7 @@ insert into BNDATA values(
             <NEIGH>Greenridge</NEIGH>
             <NEIGH>Huguenot</NEIGH>
             <NEIGH>Pleasant Plains</NEIGH>
-            <NEIGH>Prince’s Bay</NEIGH>
+            <NEIGH>Princeâ€™s Bay</NEIGH>
             <NEIGH>Richmond Valley</NEIGH>
             <NEIGH>Rossville</NEIGH>
             <NEIGH>Tottenville</NEIGH>
@@ -205,7 +205,7 @@ select * from BNDATA
 -- 4b) 
 /*Create a table like the example above that represents all Staten Island CB 3 neighborhoods
 in JSON by hand. In other words, this would be a table with one single table row. But that table 
-row would contain more than 2 text lines. (It is MORE than 2 text lines, because the long […]
+row would contain more than 2 text lines. (It is MORE than 2 text lines, because the long [â€¦]
 will probably overflow and make 3 rows). */
 
 -- 4b)
@@ -219,7 +219,7 @@ insert into  Staten_Island_cb_3_JSON values(
     '{
         "Boro": "Staten Island CB 3",
         "Neigh": ["Annadale", "Arden Heights", " Bay Terrace", "Charleston", "Eltingville",
-                  "Great Kill", "Greenridge", "Huguenot", "Pleasant Plains", "Prince’s Bay",
+                  "Great Kill", "Greenridge", "Huguenot", "Pleasant Plains", "Princeâ€™s Bay",
                   "Richmond Valley", "Rossville", "Tottenville", "Woodrow"
                   ]
     }')
